@@ -1,7 +1,9 @@
+import socket
+import sys
 from decimal import Decimal
 
 from PyQt5 import uic
-from PyQt5.QtCore import QDate, Qt, QTimer, QDateTime
+from PyQt5.QtCore import QDate, Qt, QTimer, QTime, QDateTime
 from PyQt5.QtWidgets import (
     QStackedWidget,
     QAbstractItemView,
@@ -43,12 +45,16 @@ class Menu(QWidget, form_menu):
         
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update_time)
+        self.timer.timeout.connect(self.update_running_time)
         self.timer.start(1000)
 
-        self.pushButton.clicked.connect(show_inventory)
-        self.pushButton_2.clicked.connect(show_ingred)
-        self.pushButton_3.clicked.connect(show_menu_manage)
+        self.start_time = QTime.currentTime()
 
+        self.toolButton.clicked.connect(show_inventory)
+        self.toolButton_2.clicked.connect(show_ingred)
+        self.toolButton_3.clicked.connect(show_menu_manage)
+
+        self.show_ip()
         self.load_sales()
         self.load_ingredients()
 
@@ -61,7 +67,26 @@ class Menu(QWidget, form_menu):
 
     def update_time(self):
             current = QDateTime.currentDateTime()
-            self.time_label.setText(current.toString("현재 시간 : yyyy-MM-dd hh:mm:ss"))
+            self.time_label_2.setText(current.toString("현재 시간 : yyyy-MM-dd hh:mm"))
+
+    def show_ip(self):
+        try:
+            ip = socket.gethostbyname(socket.gethostname())
+            self.ip_label.setText(f"IP : {ip}")
+        except Exception:
+            ip = "확인 불가"
+
+
+    def update_running_time(self):
+        sec = self.start_time.secsTo(QTime.currentTime())
+
+        h = sec // 3600
+        m = (sec % 3600) // 60
+        s = sec % 60
+
+        self.time_label.setText(
+            f"접속 시간 : {h:02}:{m:02}:{s:02}"
+        )
 
     def load_sales(self, keyword=""):
         try:

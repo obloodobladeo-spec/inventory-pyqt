@@ -38,118 +38,6 @@ QPushButton:pressed{
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>14</x>
-      <y>510</y>
-      <width>300</width>
-      <height>300</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Bahnschrift</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-    background:#CC3D3D;
-    border:none;
-    border-radius:45px;
-	color: #FFFFFF;
-}
-
-QPushButton:hover{
-    background:#BA2B2B;
-}
-
-QPushButton:pressed{
-    background:#A81919;
-}</string>
-    </property>
-    <property name="text">
-     <string>먹고가기</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>icon/dish.png</normaloff>icon/dish.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>90</width>
-      <height>90</height>
-     </size>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <property name="autoExclusive">
-     <bool>false</bool>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>323</x>
-      <y>510</y>
-      <width>300</width>
-      <height>300</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Bahnschrift</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-    background:white;
-    border:none;
-    border-radius:45px;
-	color: #BD5C24;
-}
-
-QPushButton:hover{
-    background:#F5F5F5;
-}
-
-QPushButton:pressed{
-    background:#E0E0E0;
-}</string>
-    </property>
-    <property name="text">
-     <string>포장하기</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>icon/free-icon-take-away-3081098.png</normaloff>icon/free-icon-take-away-3081098.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>90</width>
-      <height>90</height>
-     </size>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -256,12 +144,114 @@ QPushButton:pressed{
      </size>
     </property>
    </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>510</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>23</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+    background:#CC3D3D;
+    border:none;
+    border-radius:45px;
+	color: #FFFFFF;
+}
+
+QToolButton:hover{
+    background:#BA2B2B;
+}
+
+QToolButton:pressed{
+    background:#A81919;
+}</string>
+    </property>
+    <property name="text">
+     <string>먹고가기
+</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/dish.png</normaloff>icon/dish.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>510</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>23</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+    background:white;
+    border:none;
+    border-radius:45px;
+	color: #BD5C24;
+}
+
+QToolButton:hover{
+    background:#F5F5F5;
+}
+
+QToolButton:pressed{
+    background:#E0E0E0;
+}</string>
+    </property>
+    <property name="text">
+     <string>포장하기
+</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/free-icon-take-away-3081098.png</normaloff>icon/free-icon-take-away-3081098.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>155</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
    <zorder>setting</zorder>
+   <zorder>toolButton</zorder>
+   <zorder>toolButton_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

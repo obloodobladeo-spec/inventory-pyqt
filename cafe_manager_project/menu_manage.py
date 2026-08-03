@@ -18,7 +18,6 @@ from PyQt5.QtWidgets import (
 
 from db_helper import DB, DB_CONFIG
 
-
 CATEGORIES = ["커피", "에이드", "음료", "기타"]
 COLUMN_COUNT = 4
 
@@ -34,9 +33,9 @@ class MenuInputDialog(QDialog):
         category,
         menu_id=None,
         parent=None,
-    ):
-        super().__init__(parent)
+        ):
 
+        super().__init__(parent)
         self.db = db
         self.menu_id = menu_id
 
@@ -187,6 +186,7 @@ class MenuManageDialog(QDialog, form_class):
     def __init__(self, db, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        self.setWindowTitle("키오스크 메뉴 관리")
 
         self.db = db
         self.current_category = "커피"

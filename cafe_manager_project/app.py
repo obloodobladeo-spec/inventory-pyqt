@@ -4,13 +4,14 @@ from login_dialog import LoginDialog
 from MainWindow import MainWindow
 from PyQt5 import uic
 
-form_class = uic.loadUiType("keywork.ui")[0]
+form_class = uic.loadUiType("Kiosk.ui")[0]
 
 class Window(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.admin_window = None
+        self.setWindowTitle("키오스크")
+        self.admin_window = 0
         self.setting.clicked.connect(self.AdminWindow)
 
     def AdminWindow(self):

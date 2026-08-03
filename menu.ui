@@ -22,123 +22,6 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>24</x>
-     <y>230</y>
-     <width>316</width>
-     <height>421</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>맑은 고딕</family>
-     <pointsize>17</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-    background:white;
-    border:1px solid #BDBDBD;
-    border-radius:8px;
-}
-
-QPushButton:hover{
-    background:#F5F5F5;
-}
-
-QPushButton:pressed{
-    background:#E0E0E0;
-}</string>
-   </property>
-   <property name="text">
-    <string>카페 판매 관리</string>
-   </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>367</x>
-     <y>230</y>
-     <width>316</width>
-     <height>421</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>맑은 고딕</family>
-     <pointsize>17</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-    background:white;
-    border:1px solid #BDBDBD;
-    border-radius:8px;
-}
-
-QPushButton:hover{
-    background:#F5F5F5;
-}
-
-QPushButton:pressed{
-    background:#E0E0E0;
-}</string>
-   </property>
-   <property name="text">
-    <string>원재료 재고 관리</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>710</x>
-     <y>230</y>
-     <width>316</width>
-     <height>421</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>맑은 고딕</family>
-     <pointsize>17</pointsize>
-     <weight>50</weight>
-     <italic>false</italic>
-     <bold>false</bold>
-     <kerning>true</kerning>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-    background:white;
-    border:1px solid #BDBDBD;
-    border-radius:8px;
-}
-
-QPushButton:hover{
-    background:#F5F5F5;
-}
-
-QPushButton:pressed{
-    background:#E0E0E0;
-}</string>
-   </property>
-   <property name="text">
-    <string>키오스크
-메뉴 관리</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -218,7 +101,7 @@ QPushButton:pressed{
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>490</y>
+     <y>500</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -244,8 +127,8 @@ QPushButton:pressed{
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>490</y>
+     <x>470</x>
+     <y>500</y>
      <width>16</width>
      <height>41</height>
     </rect>
@@ -267,6 +150,174 @@ QPushButton:pressed{
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
    </property>
   </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>230</y>
+     <width>316</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+    background:white;
+    border:1px solid #BDBDBD;
+    border-radius:8px;
+}
+
+QToolButton:hover{
+    background:#F5F5F5;
+}
+
+QToolButton:pressed{
+    background:#E0E0E0;
+}</string>
+   </property>
+   <property name="text">
+    <string>카페 판매 관리
+
+
+
+</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/revenue.png</normaloff>icon/revenue.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_2">
+   <property name="geometry">
+    <rect>
+     <x>367</x>
+     <y>230</y>
+     <width>316</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+    background:white;
+    border:1px solid #BDBDBD;
+    border-radius:8px;
+}
+
+QToolButton:hover{
+    background:#F5F5F5;
+}
+
+QToolButton:pressed{
+    background:#E0E0E0;
+}</string>
+   </property>
+   <property name="text">
+    <string>원재료 재고 관리
+
+
+
+</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/inventory.png</normaloff>icon/inventory.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_3">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>230</y>
+     <width>316</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton{
+    background:white;
+    border:1px solid #BDBDBD;
+    border-radius:8px;
+}
+
+QToolButton:hover{
+    background:#F5F5F5;
+}
+
+QToolButton:pressed{
+    background:#E0E0E0;
+}</string>
+   </property>
+   <property name="text">
+    <string>키오스크
+메뉴 관리
+
+
+</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/menu.png</normaloff>icon/menu.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>time_label</zorder>
+  <zorder>line</zorder>
+  <zorder>label_2</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>label_3</zorder>
+  <zorder>toolButton_2</zorder>
+  <zorder>label_4</zorder>
+  <zorder>toolButton_3</zorder>
  </widget>
  <resources/>
  <connections/>

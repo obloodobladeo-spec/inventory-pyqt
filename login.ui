@@ -86,6 +86,9 @@
        <property name="frame">
         <bool>false</bool>
        </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item row="1" column="0">
@@ -151,6 +154,8 @@ QPushButton:pressed{
      <font>
       <family>Cascadia Code Light</family>
       <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -285,8 +290,10 @@ QPushButton:pressed{
     </property>
     <property name="font">
      <font>
-      <family>Cascadia Code Light</family>
+      <family>Bahnschrift SemiBold</family>
       <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -413,16 +420,16 @@ QPushButton:pressed{
 }</string>
     </property>
     <property name="text">
-     <string>지우기</string>
+     <string/>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../Download/free-icon-delete-6337289.png</normaloff>../Download/free-icon-delete-6337289.png</iconset>
+      <normaloff>icon/backspace_icon.png</normaloff>icon/backspace_icon.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>35</width>
-      <height>35</height>
+      <width>40</width>
+      <height>40</height>
      </size>
     </property>
    </widget>
@@ -531,7 +538,7 @@ QPushButton:pressed{
    <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>32</x>
       <y>440</y>
       <width>111</width>
       <height>51</height>
@@ -540,7 +547,7 @@ QPushButton:pressed{
     <property name="font">
      <font>
       <family>Cascadia Code Light</family>
-      <pointsize>11</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -576,7 +583,7 @@ QPushButton:pressed{
     <property name="font">
      <font>
       <family>Cascadia Code Light</family>
-      <pointsize>11</pointsize>
+      <pointsize>13</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
