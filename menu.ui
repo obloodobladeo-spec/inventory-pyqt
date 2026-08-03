@@ -25,7 +25,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>375</x>
+     <x>380</x>
      <y>50</y>
      <width>290</width>
      <height>61</height>
@@ -44,25 +44,6 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="time_label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>140</y>
-     <width>64</width>
-     <height>15</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>현재 시간:</string>
    </property>
   </widget>
   <widget class="Line" name="line">
@@ -309,8 +290,129 @@ QToolButton:pressed{
     <enum>Qt::ToolButtonTextUnderIcon</enum>
    </property>
   </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>12</y>
+     <width>310</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background:white;
+border-radius:8px;
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>25</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icon/user.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>160</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>admin님 환영합니다!</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ip_label">
+       <property name="text">
+        <string>접속 ip :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="time_label">
+       <property name="text">
+        <string>총 접속 시간 :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="time_label_2">
+       <property name="text">
+        <string>현재 시간:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>109</y>
+      <width>90</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>로그아웃</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>203</x>
+      <y>109</y>
+      <width>90</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>비밀번호 변경</string>
+    </property>
+   </widget>
+  </widget>
   <zorder>label</zorder>
-  <zorder>time_label</zorder>
   <zorder>line</zorder>
   <zorder>label_2</zorder>
   <zorder>toolButton</zorder>
@@ -318,6 +420,7 @@ QToolButton:pressed{
   <zorder>toolButton_2</zorder>
   <zorder>label_4</zorder>
   <zorder>toolButton_3</zorder>
+  <zorder>frame</zorder>
  </widget>
  <resources/>
  <connections/>
